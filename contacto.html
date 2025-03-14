@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Eclipse, el Gato</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>            
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="margin: 15px;">Contacta con Eclipse, el proximo presidente de Venezuela</h2>
+        <hr>
+
+        <div class="contenedor-formulario">
+            <form action="">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required minlength="3">
+
+                <label for="nombre">Apellido: </label>
+                <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required minlength="3">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="email@example.com" required>
+
+                <label for="pais">Selecciona tu pais</label>
+                <select name="pais" id="pais">
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Bolivia">Ecuador</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                </select>
+
+                <label for="motivo">Motivo de Contacto</label>
+                <br>
+                <input type="radio" name="motivo" id="motivo"><i>Soy Fan de Eclipse</i>
+                <input type="radio" name="motivo" id="motivo"><i>Quiero una franela de Eclipse</i>
+                <input type="radio" name="motivo" id="motivo"><i>Comerciales</i>
+                <input type="radio" name="motivo" id="motivo"><i>Reclamos</i>
+                <input type="radio" name="motivo" id="motivo"><i>Otros</i>
+                
+                <br>
+                <br>
+                
+                <label for="comentario">Comentario</label>
+                <textarea name="comentario" id="comentario" placeholder="Escribe lo que quieras"></textarea>
+                
+                <input type="submit" value="Enviar">
+
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Derechos Reservados &copy; 2025</p>
+    </footer>
+</body>
+
+</html>
